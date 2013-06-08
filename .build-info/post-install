@@ -1,0 +1,4 @@
+#!/bin/bash
+
+patch -stNi ../.build-info/libtool.patch
+cp libtool ${3}/usr/bin

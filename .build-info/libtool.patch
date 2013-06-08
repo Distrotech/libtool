@@ -1,0 +1,12 @@
+--- libtool.orig	2012-11-14 11:47:44.000000000 +0200
++++ libtool	2012-11-14 11:49:35.000000000 +0200
+@@ -1853,8 +1853,7 @@
+ 	# was found and let the user know that the "--tag" command
+ 	# line option must be used.
+ 	if test -z "$tagname"; then
+-	  func_echo "unable to infer tagged configuration"
+-	  func_fatal_error "specify a tag with \`--tag'"
++	  tagged=CC
+ #	else
+ #	  func_verbose "using $tagname tagged configuration"
+ 	fi
