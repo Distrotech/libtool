@@ -2,6 +2,11 @@ NEWS - list of user-visible changes between releases of GNU Libtool
 
 * Noteworthy changes in release ?.? (????-??-??) [?]
 
+** New features:
+
+  - Libtool script now supports (configure-time and runtime) ARFLAGS
+    variable, which obsoletes AR_FLAGS.  This is due to naming conventions
+    among other *FLAGS and to be consistent with Automake's ARFLAGS.
 
 * Noteworthy changes in release 2.4.6 (2015-02-15) [stable]
 
