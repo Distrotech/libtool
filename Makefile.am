@@ -548,6 +548,7 @@ changelog_start_date = 2011-01-01
 $(changelog): FORCE
 	$(AM_V_GEN)if test -d '$(srcdir)/.git'; then \
 	  $(gitlog_to_changelog) --amend=$(git_log_fix) \
+	      --format='%s%n%n%b%n' \
 	      --since=$(changelog_start_date) > '$@T'; \
 	  rm -f '$@'; mv '$@T' '$@'; \
 	  cat '$(changelog_old)' >> '$@'; \
